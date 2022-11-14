@@ -7,7 +7,7 @@
 */
 
 const lovesCode = true;
-console.log(`I love to code!`)
+console.log(`I love to code!`);
 
 // For problems 2-3 use the following lines of code:
 var amysAge = 29;
@@ -20,8 +20,20 @@ var brittanisBirthYear = 1986;
 /*
   Using an if statement and a comparison operator, create code that will check if Amy or Brittani is older, and then console.log '{name} is older'. Hint: Consider what will happen if they are the same age. Handle this situation.
 */
+let theName;
 
-//CODE HERE
+if (amysAge > brittanisAge) {
+  theName = "Amy";
+  console.log(`${theName} is older!`)
+} else if (brittanisAge > amysAge) {
+  theName = "Brittani";
+  console.log(`${theName} is older!`)
+} else if (brittanisAge === amysAge) {
+  theName = "Both";
+  console.log(`${theName} are the same age!`)
+} else {
+  console.log(`No sure who's older.`)
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -29,7 +41,13 @@ var brittanisBirthYear = 1986;
   Using an if statement and a comparison operator, create code that will check if Amy and Brittani were born in the same year. If they were, console.log 'Amy & Brittani were born in the same year'. If they were not, console.log 'Amy & Brittani were not born in the same year'
 */
 
-//CODE HERE
+if (amysBirthYear === brittanisBirthYear) {
+  console.log(`Amy & Brittani were born in the same year.`);
+} else if (amysBirthYear != brittanisBirthYear) {
+  console.log(`Amy & Brittani were not born the same year.`);
+} else {
+  console.log(`Hmm can't tell!`);
+}
 
 ////////// PROBLEM 4 //////////
 
