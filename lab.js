@@ -59,7 +59,19 @@ let rain = true;
   If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
-//CODE HERE
+if (temperature >= 80 && rain === true) {
+  console.log(`Try a t-shirt and bring an umbrella.`);
+} else if (temperature <= 79 && temperature >= 60 && rain === true) {
+  console.log(`Bring an umbrella & a small jacket!`);
+} else if (temperature <= 59 && rain === true) {
+  console.log(`Throw on a coat and bring that umbrella.`)
+} else if (temperature >= 80 && rain === false) {
+  console.log(`Warm day, t-shirt will do.`);
+} else if (temperature <= 79 && temperature >= 60 && rain === false) {
+  console.log(`Light jacket will do.`);
+} else if (temperature <= 59 && rain === false) {
+  console.log(`Bring a warm coat.`);
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -67,15 +79,20 @@ let rain = true;
   Create a for-loop that runs 10 times, and on each iteration logs the word 'hello'.
 */
 
-//CODE HERE
+for (let i = 0; i < 10; i++) {
+  console.log(`hello`);
+}
 
 ////////// PROBLEM 6 //////////
 
 /*
   Create a for-loop that runs 10 times, logging the numbers 1 through 10. Ex, on the first iteration it would log 1, on the second iteration it would log 2.
 */
+let myNum = 0;
 
-//CODE HERE
+for (myNum = 0; myNum <= 10; myNum++) {
+  console.log(myNum);
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -83,7 +100,10 @@ let rain = true;
   Create a for-loop that logs the numbers 0 through 10 backwards. Ex, on the first iteration it would log 10, on the second iteration it would log 9.
 */
 
-//CODE HERE
+let extraNum;
+for (extraNum = 10; extraNum >= 0; extraNum--) {
+  console.log(extraNum);
+}
 
 
 ////////// PROBLEM 8 //////////
@@ -95,7 +115,10 @@ let passingScore = 7;
   Create a while-loop that logs "Your score is not high enough" while the score variable above is below passingScore. In each iteration of the loop, increase the score by one. If your code is successful, you will see your logged statement 7 times.
 */
 
-//CODE HERE
+while (score < passingScore) {
+  console.log(`Your score is not high enough!`);
+  score++;
+}
 
 ////////// INTERMEDIATE PROBLEMS //////////
 
